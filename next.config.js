@@ -9,7 +9,7 @@ const nextConfig = {
     ]
   },
   env: {
-    URL_API: "http://localhost:8000",
+    URL_API: "backend-road-trip-planner-production.up.railway.app",
     URL_THIS: "http://localhost:3000"
   },
 }
