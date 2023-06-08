@@ -10,13 +10,17 @@ import { FormEvent } from "react";
 import env from "@/utils/constan";
 
 const createAccount = async ({ email }: { email: string }) => {
+  console.log(env.url_api);
   return axios
     .post(
       `${env.url_api}/signin`,
       {
         email,
       },
-      { withCredentials: true }
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "appplication/json" },
+      }
     )
     .then((res) => res.data);
 };
