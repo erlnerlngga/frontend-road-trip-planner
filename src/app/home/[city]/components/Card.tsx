@@ -62,8 +62,8 @@ export default function Card({
   });
 
   return (
-    <div className="flex gap-8 sm:py-4 py-2 px-3 sm:px-6 bg-gray-700 items-center rounded-lg shadow-md">
-      <div className="relative w-full h-36 object-cover">
+    <div className="flex gap-8 py-4  px-4 sm:px-6 bg-gray-700 items-center rounded-lg shadow-md">
+      <div className="relative w-full h-28 md:h-36 object-cover">
         <Image
           fill
           className="rounded-lg shadow-md"
