@@ -23,7 +23,10 @@ const createAccount = async ({
         user_name: user_name.toLowerCase(),
         email,
       },
-      { withCredentials: true }
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "appplication/json" },
+      }
     )
     .then((res) => res.data);
 };
